@@ -75,3 +75,9 @@ if(letra == letrauser){
  }
 }
 }
+
+function ejercicio5(){
+
+
+    
+}
