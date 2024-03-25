@@ -90,24 +90,17 @@ function ejercicio5(){
 function ejercicio6(){
 
     let factor = prompt("Ingrese un numero para calcular el factorial")
-    let resto = factor / 2
+    let resto = factor % 2
     
     if(resto == 0){
         console.log("El numero es par")
     }
-   else if(factor == 0){
-
+   else if(factor <= 0){
         console.log("El numero cero no es valido")
     }
     else{
         console.log("El numero es impar")
     }
-
-    
-    
-   
-
-    
 }
 
 
