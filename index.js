@@ -102,6 +102,20 @@ function ejercicio6(){
         console.log("El numero es impar")
     }
 }
+function ejercicio7(){
+var ing = prompt("ingrese texto")
+var minusculas  = (q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m)
+var mayusculas = (Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Ñ,Z,X,C,V,B,N,M)
+
+if(prompt = minusculas){
+ console.log("usted ingreso minusculas")
+}
+else if(prompt = mayusculas){
+    console.log("usted ingreso mayusculas")
+
+}
+
+}
 
 
 
