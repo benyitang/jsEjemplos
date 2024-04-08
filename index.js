@@ -130,13 +130,14 @@ if (may == 0) {
 } else {
     return "son mayusculas y minusculas"
 }
+}
 
 function ejercicio8() {
     var txt = prompt("Ingrese una palabra u oración para determinar si es palíndromo o no.");
     var result = espalindromo(txt);
     alert(result); 
-
 }
+
 function espalindromo(txt) {
     var texto = txt.toLowerCase().replace(/[^a-z]/g, '');
     var invertir = texto.split('').reverse().join(''); 
@@ -144,6 +145,5 @@ function espalindromo(txt) {
         return "Es palíndromo.";
     } else {
         return "No es palíndromo.";
-}
-}
+    }
 }
