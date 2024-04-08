@@ -135,11 +135,11 @@ function ejercicio8() {
     var txt = prompt("Ingrese una palabra u oración para determinar si es palíndromo o no.");
     var result = espalindromo(txt);
     alert(result); 
-}
 
+}
 function espalindromo(txt) {
     var texto = txt.toLowerCase().replace(/[^a-z]/g, '');
-    var invertir = texto.split('').reverse().join(''); // Corrección: usar reverse() en lugar de reverse
+    var invertir = texto.split('').reverse().join(''); 
     if (txt == invertir) {
         return "Es palíndromo.";
     } else {
