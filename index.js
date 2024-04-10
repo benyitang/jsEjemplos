@@ -118,7 +118,6 @@ if (condition) {
 }
 
  function ejercicio7(){
-<<<<<<< HEAD
 
     let txt =prompt("Ingrese texto")
     
@@ -188,15 +187,12 @@ function espalindromo(txt) {
     function lanzarDado() {
         return Math.floor(Math.random() * 6) + 1; 
     }
-=======
->>>>>>> fa4768e2169e3e5ddfe501b369f2ae886f6ff686
-
     let txt =prompt("Ingrese texto")
     
     let result=mayusmin(txt);
 
     console.log (result);
- }
+ 
     function mayusmin(txt){
     let may = 0;
     let min = 0;
