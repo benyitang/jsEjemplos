@@ -161,6 +161,7 @@ function espalindromo(txt) {
         return "No es palíndromo.";
     }
 }
+
     function lanzarDados() {
     
         let conteoSumas = [0,0,0,0,0,0,0,0,0,0,0,0,0]; 
@@ -229,3 +230,4 @@ function espalindromo(txt) {
         return "No es palíndromo.";
     }
 }
+
