@@ -102,21 +102,6 @@ function ejercicio6(){
         console.log("El numero es impar")
     }
 }
-function ejercicio7(){
-var ing = prompt("ingrese texto")
-let txt= ing.charAt()
-
-for (let i = 0; i < txt.length; i++) {
-if (condition) {
-    
-} else {
-    
-}    
-    
-}
-
-}
-
  function ejercicio7(){
 
     let txt =prompt("Ingrese texto")
