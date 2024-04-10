@@ -117,5 +117,119 @@ if (condition) {
 
 }
 
+ function ejercicio7(){
+<<<<<<< HEAD
 
+    let txt =prompt("Ingrese texto")
+    
+    let result=mayusmin(txt);
 
+    console.log (result);
+ }
+    function mayusmin(txt){
+    let may = 0;
+    let min = 0;
+        
+    for (let i = 0; i < txt.length; i++) {
+    if (txt.charAt(i)== txt.charAt(i).toUpperCase()) {
+        may++;    
+    } else if (txt.charAt(i)== txt.charAt(i).toLowerCase()){
+         min++;       
+    }    
+}
+
+if (may == 0) {
+    return "son todas minusculas"
+} else if (min == 0) {
+    return "son todas mayusculas"
+} else {
+    return "son mayusculas y minusculas"
+}
+}
+
+function ejercicio8() {
+    var txt = prompt("Ingrese una palabra u oración para determinar si es palíndromo o no.");
+    var result = espalindromo(txt);
+    alert(result); 
+}
+
+function espalindromo(txt) {
+    var texto = txt.toLowerCase().replace(/[^a-z]/g, '');
+    var invertir = texto.split('').reverse().join(''); 
+    if (txt == invertir) {
+        return "Es palíndromo.";
+    } else {
+        return "No es palíndromo.";
+    }
+}
+    function lanzarDados() {
+    
+        let conteoSumas = [0,0,0,0,0,0,0,0,0,0,0,0,0]; 
+        let acumulador= 0;
+        for (let i = 0; i < 36000; i++) {
+            let suma = simularLanzamiento();
+            conteoSumas[suma]++; 
+        }
+    
+        console.log("Resultado del conteo de las sumas de los dados:");
+        for (let i = 2; i < conteoSumas.length; i++) {
+            console.log(`Suma ${i}: ${conteoSumas[i]} veces`);
+            acumulador = acumulador + conteoSumas[i];
+        }
+        console.log(acumulador);
+    }
+    function simularLanzamiento() {
+        let dado1 = lanzarDado();
+        let dado2 = lanzarDado();
+        let suma = dado1 + dado2;
+        return suma;
+    }
+    
+    function lanzarDado() {
+        return Math.floor(Math.random() * 6) + 1; 
+    }
+=======
+>>>>>>> fa4768e2169e3e5ddfe501b369f2ae886f6ff686
+
+    let txt =prompt("Ingrese texto")
+    
+    let result=mayusmin(txt);
+
+    console.log (result);
+ }
+    function mayusmin(txt){
+    let may = 0;
+    let min = 0;
+        
+    for (let i = 0; i < txt.length; i++) {
+    if (txt.charAt(i)== txt.charAt(i).toUpperCase()) {
+        may++;    
+    } else if (txt.charAt(i)== txt.charAt(i).toLowerCase()){
+         min++;       
+    }    
+}
+
+if (may == 0) {
+    return "son todas minusculas"
+} else if (min == 0) {
+    return "son todas mayusculas"
+} else {
+    return "son mayusculas y minusculas"
+}
+}
+
+function ejercicio8() {
+    var txt = prompt("Ingrese una palabra u oración para determinar si es palíndromo o no.");
+    var result = espalindromo(txt);
+    alert(result); 
+}
+
+function espalindromo(txt) {
+    var texto = txt.toLowerCase().replace(/[^a-z]/g, '');
+    var invertir = texto.split('').reverse().join(''); 
+    if (txt == invertir) {
+        return "Es palíndromo.";
+    } else {
+        return "No es palíndromo.";
+    }
+}
